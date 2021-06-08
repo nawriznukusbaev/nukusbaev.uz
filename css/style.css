@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 3.75% 13.25% 83%;
+  grid-gap: 0;
+  grid-template-areas:
+    "main-menu  main-menu  main-menu"
+    "left-menu  explorer  code"
+    "footer footer footer"
+  ;
+}
+
+#grid>div {
+
+  background: gold;
+  text-align: center;
+}
+
+#grid>.main-menu {
+  height: 46px;
+  grid-area: main-menu;
+  background-color: #323233;
+}
+
+#grid>.left-menu {
+  height: 860px;
+  grid-area: left-menu;
+  background-color: #323233;
+}
+
+#grid>.explorer {
+  height: 860px;
+
+  grid-area: explorer;
+  background-color: #252526;
+}
+
+#grid>.code {
+  height: 860px;
+
+  grid-area: code;
+  background-color: #1e1e1e;
+}
+
+#grid>.footer {
+  grid-area: footer;
+  height: 36px;
+  background-color: #007acc;
+}
+
+.header-left>li {
+  font-size: larger;
+  font-family: sans-serif;
+  list-style: none;
+  float: left;
+  padding: 12px;
+  display: inline;
+}
+
+ul.header-center {
+  font-size: 16px;
+  font-family: sans-serif;
+  list-style: none;
+  float: left;
+  padding: 15px;
+  margin-left: 200px;
+  display: inline;
+  color: rgb(226, 223, 223);
+}
+.header-right{font-size: 16px;
+  font-family: sans-serif;
+  list-style: none;
+  float: right;
+  padding: 15px;
+    display: inline;
+  color: rgb(226, 223, 223);}
+
+a {
+  color: rgb(226, 223, 223);
+  text-decoration: none;
+}
+
+.logo {
+  float: left;
+  padding: 10px;
+  padding-left: 15px;
+  width: 23px;
+  height: 23px;
+}
