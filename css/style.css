@@ -10,6 +10,7 @@
   grid-template-areas:
     "main-menu  main-menu  main-menu"
     "left-menu  explorer  code"
+
     "footer footer footer"
   ;
 }
@@ -34,14 +35,15 @@
 
 #grid>.explorer {
   height: 860px;
-
+  align-content: end;
   grid-area: explorer;
+  position: relative;
   background-color: #252526;
 }
 
 #grid>.code {
   height: 860px;
-
+  position: relative;
   grid-area: code;
   background-color: #1e1e1e;
 }
@@ -71,13 +73,16 @@ ul.header-center {
   display: inline;
   color: rgb(226, 223, 223);
 }
-.header-right{font-size: 16px;
+
+.header-right>li {
+  font-size: 16px;
   font-family: sans-serif;
   list-style: none;
   float: right;
   padding: 15px;
-    display: inline;
-  color: rgb(226, 223, 223);}
+  display: inline;
+  color: rgb(226, 223, 223);
+}
 
 a {
   color: rgb(226, 223, 223);
@@ -90,4 +95,32 @@ a {
   padding-left: 15px;
   width: 23px;
   height: 23px;
+}
+
+.bottom {
+  background-color: #252526;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid #474747;
+  height: 30px;
+}
+
+.bottom-2 {
+  background-color: #252526;
+  position: absolute;
+  bottom: 32px;
+  width: 100%;
+  border-top: 2px solid #474747;
+  height: 30px;
+}
+
+.terminal {
+  background-color: #1e1e1e;
+  width: 100%;
+  border-top: 2px solid #474747;
+  height: 300px;
+  position: absolute;
+  bottom: 0;
+
 }
